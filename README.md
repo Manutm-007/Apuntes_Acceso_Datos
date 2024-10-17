@@ -1,6 +1,8 @@
+
 ------------------------------------------------------------------------------------------------------------------
 Preguntas Teóricas sobre SQLite y sqlite3
 ------------------------------------------------------------------------------------------------------------------
+
 1:¿Qué es SQLite?
 SQLite es una biblioteca de software que implementa un motor de base de datos SQL embebido. Es liviano, rápido y no requiere un servidor separado.
 
@@ -34,6 +36,7 @@ Se utilizan bloques try-except para capturar y manejar errores de base de datos.
 ------------------------------------------------------------------------------------------------------------------
 Preguntas Prácticas sobre Programación
 ------------------------------------------------------------------------------------------------------------------
+
 1:Escribe un programa que cree una base de datos llamada escuela.db y una tabla llamada alumnos con columnas id, nombre y curso.
 
 import sqlite3
@@ -155,9 +158,11 @@ cursor.executemany("INSERT INTO alumnos (id, nombre, curso) VALUES (?, ?, ?)", l
 
 conn.commit()
 conn.close()
+
 ------------------------------------------------------------------------------------------------------------------
 Preguntas Adicionales
 ------------------------------------------------------------------------------------------------------------------
+
 1: ¿Qué comando se utiliza para ver las tablas en una base de datos SQLite desde la consola?
 .tables
 
