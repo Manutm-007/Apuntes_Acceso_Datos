@@ -1,7 +1,6 @@
-___________________________________________________________________________________________________________________________________________________________________________________________________________________
+------------------------------------------------------------------------------------------------------------------
 Preguntas Teóricas sobre SQLite y sqlite3
-___________________________________________________________________________________________________________________________________________________________________________________________________________________
-
+------------------------------------------------------------------------------------------------------------------
 1:¿Qué es SQLite?
 SQLite es una biblioteca de software que implementa un motor de base de datos SQL embebido. Es liviano, rápido y no requiere un servidor separado.
 
@@ -32,9 +31,9 @@ commit() guarda todos los cambios realizados en la base de datos desde la últim
 10:¿Cómo se manejan excepciones al trabajar con bases de datos en Python?
 Se utilizan bloques try-except para capturar y manejar errores de base de datos.
 
-___________________________________________________________________________________________________________________________________________________________________________________________________________________
+------------------------------------------------------------------------------------------------------------------
 Preguntas Prácticas sobre Programación
-
+------------------------------------------------------------------------------------------------------------------
 1:Escribe un programa que cree una base de datos llamada escuela.db y una tabla llamada alumnos con columnas id, nombre y curso.
 
 import sqlite3
@@ -142,9 +141,6 @@ print(f"Total de alumnos: {total_alumnos}")
 
 conn.close()
 6: Crea un programa que use executemany() para insertar múltiples registros en la tabla alumnos.
-
-
-
 import sqlite3
 
 conn = sqlite3.connect("escuela.db")
@@ -159,11 +155,11 @@ cursor.executemany("INSERT INTO alumnos (id, nombre, curso) VALUES (?, ?, ?)", l
 
 conn.commit()
 conn.close()
-
+------------------------------------------------------------------------------------------------------------------
 Preguntas Adicionales
+------------------------------------------------------------------------------------------------------------------
 1: ¿Qué comando se utiliza para ver las tablas en una base de datos SQLite desde la consola?
+.tables
 
- .tables
 2: ¿Cómo se eliminan todas las filas de una tabla sin eliminar la tabla misma?
-
- DELETE FROM nombre_tabla
+DELETE FROM nombre_tabla
